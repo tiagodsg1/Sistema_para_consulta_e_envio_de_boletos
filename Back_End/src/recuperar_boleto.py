@@ -1,7 +1,7 @@
 import requests
 import base64
 def recuperar_boleto(nosso_numero):
-    request_body = "client_id=4e032da3-504b-49e8-973b-514b988088a9&client_secret=fc708758-7aec-4b60-b8c6-c2203b073c6b&scope=boleto-cobranca.read boleto-cobranca.write&grant_type=client_credentials"
+    request_body = "client_id={seuid}&client_secret={seuid}&scope=boleto-cobranca.read boleto-cobranca.write&grant_type=client_credentials"
         
     response = requests.post("https://cdpj.partners.bancointer.com.br/oauth/v2/token", 
     headers={"Content-Type": "application/x-www-form-urlencoded"},
