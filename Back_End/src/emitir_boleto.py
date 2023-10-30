@@ -6,7 +6,7 @@ def emitir_boleto():
         
     response = requests.post("https://cdpj.partners.bancointer.com.br/oauth/v2/token", 
     headers={"Content-Type": "application/x-www-form-urlencoded"},
-    cert=('Certificados/Inter API_Certificado.crt','Certificados/Inter API_Chave.key'),
+    cert=('certificado.crt','certificado.key'),
     data=request_body)
 
     response.raise_for_status()
