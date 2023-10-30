@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>757</width>
+    <height>533</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>30</width>
+    <height>30</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>490</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Calibri</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+        border-radius: 12px;
+        border: 2px solid gray;
+        background-color: #101B79;
+        color: white;
+        border-color: #A3A3A3;
+    }
+    QPushButton:hover {
+        background-color: #2E3E98; /* Cor de fundo ao passar o mouse */
+    }
+    QPushButton:pressed {
+        border-style: inset; /* Efeito de profundidade ao ser pressionado */
+    }</string>
+   </property>
+   <property name="text">
+    <string>Iniciar</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../../../../../Desktop/CloudLoad 2.0/Front_End/static/resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

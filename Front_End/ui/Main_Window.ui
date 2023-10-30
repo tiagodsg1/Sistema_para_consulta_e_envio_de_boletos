@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UpHouse</class>
+ <widget class="QMainWindow" name="UpHouse">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>931</width>
+    <height>590</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>931</width>
+    <height>590</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>931</width>
+    <height>590</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>System Up House</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normalon>:/newPrefix/icons/icon.ico</normalon>
+   </iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QSplitter" name="splitter">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QWidget" name="menu_widget" native="true">
+       <property name="minimumSize">
+        <size>
+         <width>150</width>
+         <height>150</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>180</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #06162d;
+color: #fff;
+border: none;</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <property name="leftMargin">
+         <number>4</number>
+        </property>
+        <property name="topMargin">
+         <number>4</number>
+        </property>
+        <property name="rightMargin">
+         <number>4</number>
+        </property>
+        <property name="bottomMargin">
+         <number>15</number>
+        </property>
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QToolBox" name="toolBox">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="cursor">
+           <cursorShape>ArrowCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">#toolBox {
+	color: #fff;
+}
+
+#toolBox::tab {
+	padding-left:5px;
+	text-align:left;
+	border-radius: 2px;
+}
+
+
+#toolBox::tab:selected {
+	background-color: #2d9cdb;
+	font-weight: bold;
+}
+
+#toolBox QPushButton {
+	padding:5px 0px 5px 20px;
+	text-align:left;
+	border-radius: 3px;
+}
+
+#toolBox QPushButton:hover {
+	background-color: #85C1E9;
+}
+
+#toolBox QPushButton:checked {
+	background-color: #3498DB;
+}
+
+</string>
+          </property>
+          <property name="currentIndex">
+           <number>2</number>
+          </property>
+          <widget class="QWidget" name="home_page">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>172</width>
+             <height>481</height>
+            </rect>
+           </property>
+           <attribute name="icon">
+            <iconset resource="../static/resource.qrc">
+             <normaloff>:/icon/icons/home-4-48.ico</normaloff>:/icon/icons/home-4-48.ico</iconset>
+           </attribute>
+           <attribute name="label">
+            <string>Home</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_4">
+            <item>
+             <widget class="QPushButton" name="home_button">
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="text">
+               <string>Home</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacer_3">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>191</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="Clientes_page">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>172</width>
+             <height>481</height>
+            </rect>
+           </property>
+           <attribute name="icon">
+            <iconset resource="../static/resource.qrc">
+             <normaloff>:/icon/icons/group-48.ico</normaloff>:/icon/icons/group-48.ico</iconset>
+           </attribute>
+           <attribute name="label">
+            <string>Clientes</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_2">
+            <item>
+             <widget class="QPushButton" name="consultar_alterar">
+              <property name="font">
+               <font>
+                <underline>false</underline>
+               </font>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="layoutDirection">
+               <enum>Qt::LeftToRight</enum>
+              </property>
+              <property name="text">
+               <string>Consultar/Alterar Cliente</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="adicionar">
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="text">
+               <string>Adicionar Cliente</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="remover">
+              <property name="text">
+               <string>Remover Cliente</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacer">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>472</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="boletos_page">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>172</width>
+             <height>481</height>
+            </rect>
+           </property>
+           <attribute name="icon">
+            <iconset resource="../static/resource.qrc">
+             <normaloff>:/icon/icons/invoice_invoice_ticket_document_icon_188775.ico</normaloff>:/icon/icons/invoice_invoice_ticket_document_icon_188775.ico</iconset>
+           </attribute>
+           <attribute name="label">
+            <string>Boletos</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_6">
+            <item>
+             <widget class="QPushButton" name="gerar">
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="text">
+               <string>Gerar Boleto</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="cancelar">
+              <property name="text">
+               <string>Cancelar Boleto</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacer_5">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="main_widget" native="true">
+       <layout class="QGridLayout" name="gridLayout_2">
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QTabWidget" name="tabWidget">
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">#tabWidget{
+	background-color: #fff;
+}
+
+QTabBar::close-button{
+	margin-left: 3px;
+	image: url(:/icon/icons/x-mark-4-32.ico);
+}
+
+QTabBar::close-button:hover{
+	image :url(:/icon/icons/x-mark-4-48.ico)
+}</string>
+          </property>
+          <property name="currentIndex">
+           <number>-1</number>
+          </property>
+          <property name="usesScrollButtons">
+           <bool>true</bool>
+          </property>
+          <property name="documentMode">
+           <bool>false</bool>
+          </property>
+          <property name="tabsClosable">
+           <bool>true</bool>
+          </property>
+          <property name="movable">
+           <bool>false</bool>
+          </property>
+          <property name="tabBarAutoHide">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../static/resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
