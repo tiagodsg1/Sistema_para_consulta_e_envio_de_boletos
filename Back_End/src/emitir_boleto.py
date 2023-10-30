@@ -37,7 +37,7 @@ def emitir_boleto():
 
     response = requests.post("https://cdpj.partners.bancointer.com.br/cobranca/v2/boletos", 
         headers={"Authorization": "Bearer " + token}, 
-        cert=('Certificados/Inter API_Certificado.crt','Certificados/Inter API_Chave.key'),
+        cert=('certificado.crt','certificado.key'),
         json=dados_boleto
     )
 
