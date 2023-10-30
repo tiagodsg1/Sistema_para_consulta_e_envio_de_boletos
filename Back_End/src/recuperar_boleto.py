@@ -5,7 +5,7 @@ def recuperar_boleto(nosso_numero):
         
     response = requests.post("https://cdpj.partners.bancointer.com.br/oauth/v2/token", 
     headers={"Content-Type": "application/x-www-form-urlencoded"},
-    cert=('Certificados/Inter API_Certificado.crt','Certificados/Inter API_Chave.key'),
+    cert=('certificado.crt','certifiado.key'),
     data=request_body)
 
     response.raise_for_status()
@@ -14,7 +14,7 @@ def recuperar_boleto(nosso_numero):
 
     response = requests.get(f"https://cdpj.partners.bancointer.com.br/cobranca/v2/boletos/{nosso_numero}/pdf", 
         headers={"Authorization": "Bearer " + token}, 
-        cert=('Certificados/Inter API_Certificado.crt','Certificados/Inter API_Chave.key') 
+        cert=('certificado.crt','certificado.key') 
     )
 
     response.raise_for_status()
